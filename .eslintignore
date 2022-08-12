@@ -1,0 +1,8 @@
+src/*.js
+src/*.css
+src/components/*
+src/pages/*
+src/tests/*
+src/services/*
+coverage/*
+reports
