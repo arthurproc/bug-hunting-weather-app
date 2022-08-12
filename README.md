@@ -6,7 +6,7 @@ Weather App é uma interface que auxília a pessoa usuária a descobrir informa�
 
 Originalmente o projeto foi pensado para ser executado da seguinte forma:
  1. Pessoa carrega a página inicial onde existe um formulário contendo um campo para digitar o nome da cidade a ser pesquisada e um botão de pesquisar.
-    - O botão de pesquisar permanece desabilitado não é digitado o nome da cidade.
+    - O botão de pesquisar permanece desabilitado enquanto não é digitado o nome da cidade.
  2. Ao digitar o nome da cidade e clicar em pesquisar, a pessoa é levada a uma nova rota da aplicação em que irá conter o nome da cidade pesquisada.
  3. Nesta rota, o formulário continua visível porém um `card` de tempo com o resultado da pesquisa é exibido logo abaixo.
 
