@@ -9,12 +9,17 @@ class SearchForm extends Component {
       error: '',
       disabled: true,
     };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e) {
     this.setState({
-      [e.target.name]: e.target.value,
-      disabled: !this.validateForm(),
+      [e.target.name]: e.target.value
+    }, () => {
+      this.setState({
+        disabled: !this.validateForm()
+      })
     });
   }
 
@@ -41,7 +46,7 @@ class SearchForm extends Component {
   render() {
     const { error, city, disabled } = this.state;
     return (
-      <form className="form text-center" onSubmit={ this.handleSubmit }>
+      <form className="form text-center">
         <div className="form-group">
           <div className="mb-3">
             <label htmlFor="city-input">
@@ -51,6 +56,7 @@ class SearchForm extends Component {
                 className="form-control"
                 id="city-input"
                 placeholder="Enter city"
+                name="city"
                 value={ city }
                 onChange={ this.handleChange }
               />
@@ -58,9 +64,10 @@ class SearchForm extends Component {
           </div>
         </div>
         <button
-          type="submit"
+          type="button"
           className="btn btn-primary"
           disabled={ disabled }
+          onClick={ this.handleSubmit }
         >
           Search
         </button>

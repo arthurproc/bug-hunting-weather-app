@@ -63,10 +63,10 @@ class WeatherPage extends Component {
             { weather.currentConditions && (
               <WeatherCard
                 dayhour={ weather.currentConditions.dayhour }
-                temp={ weather.currentConditions.temp }
+                temperature={ weather.currentConditions.temp.c }
                 humidity={ weather.currentConditions.humidity }
-                iconURL={ weather.currentConditions.iconURL }
-                wind={ weather.currentConditions.wind }
+                icon={ weather.currentConditions.iconURL }
+                wind={ weather.currentConditions.wind.km }
                 comment={ weather.currentConditions.comment }
               />
             )}
