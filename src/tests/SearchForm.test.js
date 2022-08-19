@@ -1,11 +1,14 @@
 import React from 'react';
-import { render, screen, userEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { createMemoryHistory } from 'history';
 
 import SearchForm from '../components/SearchForm';
 
 describe('Test SearchForm', () => {
   it('pushes to `weather/itabira` when submit form with `itabira`', () => {
-    const { history } = render(<SearchForm />);
+    const history = createMemoryHistory();
+    render(<SearchForm history={ history } />);
     jest.spyOn(history, 'push');
 
     const city = 'itabira';
