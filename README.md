@@ -1,18 +1,26 @@
-# Boas vindas ao Weather App
+# Bug Hunting Weather App
 
-Este projeto foi construído com muito amor e carinho, porém ele contém alguns `bugs` que precisam ser corrigidos.
+This project was created to be used for trainning bug hunting skills on React and integration tests using React Testing Library (RTL). 
 
-Weather App é uma interface que auxília a pessoa usuária a descobrir informações atuais sobre o tempo em uma determinada cidade que pesquisar.
+## How to use
 
-Originalmente o projeto foi pensado para ser executado da seguinte forma:
- 1. Pessoa carrega a página inicial onde existe um formulário contendo um campo para digitar o nome da cidade a ser pesquisada e um botão de pesquisar.
-    - O botão de pesquisar permanece desabilitado enquanto não é digitado o nome da cidade.
- 2. Ao digitar o nome da cidade e clicar em pesquisar, a pessoa é levada a uma nova rota da aplicação em que irá conter o nome da cidade pesquisada.
- 3. Nesta rota, o formulário continua visível porém um `card` de tempo com o resultado da pesquisa é exibido logo abaixo.
+1. Clone this repository.
+2. Install the dependencies `npm install`.
+3. Execute the project with `npm start`.
+  > You will notice that a lot of errors have been prompted, use your react skills to try to resolve the issues.
+  > Try to make the application work as intendend, the specification of how the App should work is on the section below _About the App_.
+4. After fixing the errors with application, try to execute the tests with `npm test`.
+  > The execution will fail, now you can start training your bug hunting skills trying to fix those errors.
+  Explore the source code of the project, the components and the tests to resolve it.
 
-Este projeto também conta com testes unitários, presentes na pasta `src/tests` porém os testes parecem não funcionar corretamente e precisam ser corrigidos.
+## About the App
 
-Utilize os seus conhecimentos em `RTL`, `React` e `Bug Hunting` para corrigir os bugs deste projeto de deixar ele pronto para ser utilizado.
+Weather App is an Web App that show to the users the current Weather of any city he wants to know.
 
+How the App should be working:
+ 1. User loads the initial page where exists a form with a field to put the city he wants to search for.
+    - The to search should be disabled while no city have been typed.
+ 2. After typing the city and clicking on `Search` button, the user is taken to a new page where it contains the name of the searched city.
+ 3. On this page, the form continues visible but know have a `card` with the weather information about the searched city.
 
-**Obs:** Este projeto não conta com correção automatizada.
+Have Fun!
